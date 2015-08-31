@@ -1,4 +1,37 @@
 {
-    "Welcome": "Bienvenue",
-    "A brand new app.": "Une toute nouvelle application."
+    "___comment": "api/controllers/Auth",
+    "c.auth.passport.generic.authorization": "Une erreur est survenue durant votre authentification.",
+
+    "___comment": "api/controllers/User",
+    "c.user.no.file.uploaded": "Aucun fichier envoyé sur le serveur.",
+
+    "___comment": "api/models/Passport",
+    "m.passport.no.password.defined": "Aucun mot de passe définit.",
+    "m.passport.does.not.match.confirmation": "La confirmation de mot de passe ne correspond pas.",
+    "m.passport.does.not.match.old.password": "Le mot de passe ne correspond pas.",
+
+    "___comment": "api/policies/SessionAuth",
+    "p.session.not.permitted": "Vous n'êtes pas autorisés à exécuter cette action.",
+
+    "___comment": "api/services/EmailService",
+    "s.email.invite.subject": "You'r In! ~ Writr",
+    "s.email.invite.from_name": "Entrez dans le beta-book!",
+    "s.email.invite.text": "Bonjour %s,\nVous êtes dans la Beta! Cliquez %s pour actier votre compte.",
+
+    "___comment": "api/services/PassportService",
+    "s.passport.no.authentication.provided": "Aucun fournisseur d'authentication définit.",
+    "s.passport.no.username.no.email": "Adresse mail ou nom d'utilisateur non valide.",
+    "s.passport.invalid.action": "Action non valide.",
+    "s.passport.user.exists": "Ce nom d'utilisateur est déjà utilisé..",
+    "s.passport.email.exists": "Cette adresse mail existe déjà. Essayez de vous connecter.",
+    "s.passport.email.missing": "Aucune adresse mail n'a été entrée.",
+    "s.passport.username.missing": "Aucun nom d'utilisateur n'a été entré.",
+    "s.passport.password.missing": "Aucun mot de passe n'a été entré.",
+    "s.passport.email.exists": "Cette adresse mail existe déjà.",
+    "s.passport.user.exists": "Cet utilisateur existe déjà.",
+    "s.passport.invalid.password": "Mot de passe invalide.",
+    "s.passport.email.not.found": "Adresse mail non trouvée.",
+    "s.passport.username.not.found": "Nom d'utilisateur non trouvé.",
+    "s.passport.password.wrong": "Mot de passe erroné.",
+    "s.passport.password.not.set": "Mot de passe non définit."
 }

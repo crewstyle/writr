@@ -62,5 +62,10 @@ module.exports.site = {
         name: 'Pencil for Writr',
         version: '0.0.1',
         url: 'https://github.com/crewstyle/pencil-writr'
+    },
+
+    // file upload
+    file: {
+        max_size: 10000000 // 10Mb
     }
 };

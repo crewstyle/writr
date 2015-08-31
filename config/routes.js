@@ -35,8 +35,10 @@ module.exports.routes = {
     ***************************************************************************/
 
     '/': {
-        view: 'homepage'
-    }
+        controller: 'SiteController',
+        action: 'index',
+        populate: true
+    },
 
     /***************************************************************************
     *                                                                          *
@@ -48,9 +50,38 @@ module.exports.routes = {
     *                                                                          *
     ***************************************************************************/
 
-    /*'get /me': {
-        controller: 'UserController',
-        action: 'profile',
-        populate: true,
-    }*/
+    'get /login': {
+        controller: 'AuthController',
+        action: 'login'
+    },
+    'get /logout': {
+        controller: 'AuthController',
+        action: 'logout'
+    },
+    'get /register': {
+        controller: 'AuthController',
+        action: 'register'
+    },
+
+    'post /auth/local': {
+        controller: 'AuthController',
+        action: 'callback'
+    },
+    'post /auth/local/:action': {
+        controller: 'AuthController',
+        action: 'callback'
+    },
+
+    'get /auth/:provider': {
+        controller: 'AuthController',
+        action: 'provider'
+    },
+    'get /auth/:provider/callback': {
+        controller: 'AuthController',
+        action: 'callback'
+    },
+    'get /auth/:provider/:action': {
+        controller: 'AuthController',
+        action: 'callback'
+    }
 };

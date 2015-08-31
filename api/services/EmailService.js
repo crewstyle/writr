@@ -18,20 +18,20 @@ module.exports = {
      * EmailService.sendInviteEmail({email:'achrafchouk@gmail.com', name:'Ach'});
      */
     sendInviteEmail: function (options){
+        var _url = '<insert-link-here>';
+
         var opts = {
             type: 'messages',
             call: 'send',
             message: {
-                subject: 'You\'r In!',
+                subject: res.i18n('s.email.invite.subject'),
                 from_email: 'hello@writr.co',
-                from_name: 'Writr ♥ ~ Come in the book!',
-                to: [
-                    {
-                        email: options.email,
-                        name: options.name
-                    }
-                ],
-                text: 'Dear ' + options.name + ',\nYou\'re in the Beta! Click <insert link> to verify your account.'
+                from_name: res.i18n('s.email.invite.from_name'),
+                to: [{
+                    email: options.email,
+                    name: options.name
+                }],
+                text: res.i18n('s.email.invite.text', options.name, _url)
             }
         };
 

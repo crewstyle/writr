@@ -28,6 +28,11 @@ module.exports.policies = {
     ***************************************************************************/
 
     // '*': true,
+    '*': [
+        'BearerAuth',
+        'Passport',
+        'SessionAuth'
+    ],
 
     /***************************************************************************
     *                                                                          *
@@ -36,6 +41,11 @@ module.exports.policies = {
     *                                                                          *
     ***************************************************************************/
 
+    AuthController: {
+        '*': [
+            'Passport'
+        ]
+    }
     /*UserController: {
         // Apply the `false` policy as the default for all of UserController's actions
         // (`false` prevents all access, which ensures that nothing bad happens to our users)

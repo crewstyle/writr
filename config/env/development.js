@@ -22,32 +22,6 @@ module.exports = {
     models: {
         // connection: 'MongodbServer',
         connection: 'localDiskDb',
-    },
-
-    /***************************************************************************
-    * Set the social networks passport configurations                          *
-    ***************************************************************************/
-
-    // facebook
-    facebook: {
-        clientID: '399799573560322',
-        clientSecret: 'd98922f7bb6c01f0f5f54c98705e5324',
-        callbackURL: '/auth/facebook/callback',
-        //callbackURL: 'http://localhost:' + port + '/auth/facebook/callback',
-    },
-
-    // twitter
-    twitter: {
-        consumerKey: 'fhyqYHSM7lGPkMLYG1AuaLpAH',
-        consumerSecret: 'Fstd4uQDCcDQ9Xm0MizAs6jBFMCviAM6UW5XRUzdvDGtktsHCm',
-        callbackURL: '/auth/twitter/callback'
-    },
-
-    // google+
-    google: {
-        clientID: '192122328499-iosg3u1m31inuqqoip8qsvqgv884tgo6.apps.googleusercontent.com',
-        clientSecret: 'HkZAVVhrwPQvRE6-WmjHLG2A',
-        callbackURL: '/auth/google/callback'
     }
 
 };

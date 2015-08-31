@@ -1,4 +1,37 @@
 {
-    "Welcome": "Welcome",
-    "A brand new app.": "A brand new app."
+    "___comment": "api/controllers/Auth",
+    "c.auth.passport.generic.authorization": "Something went wrong with authorization.",
+
+    "___comment": "api/controllers/User",
+    "c.user.no.file.uploaded": "No file was uploaded.",
+
+    "___comment": "api/models/Passport",
+    "m.passport.no.password.defined": "No password defined.",
+    "m.passport.does.not.match.confirmation": "Password doesnt match password confirmation.",
+    "m.passport.does.not.match.old.password": "Password doesnt match with your old password.",
+
+    "___comment": "api/policies/SessionAuth",
+    "p.session.not.permitted": "You are not permitted to perform this action.",
+
+    "___comment": "api/services/EmailService",
+    "s.email.invite.subject": "You'r In! ~ Writr",
+    "s.email.invite.from_name": "Come in the beta-book!",
+    "s.email.invite.text": "Dear %s,\nYou're in the Beta! Click %s to verify your account.",
+
+    "___comment": "api/services/PassportService",
+    "s.passport.no.authentication.provided": "No authentication provider was identified.",
+    "s.passport.no.username.no.email": "Neither a username nor email was available.",
+    "s.passport.invalid.action": "Invalid action.",
+    "s.passport.user.exists": "This username is already taken.",
+    "s.passport.email.exists": "This email already exists. So try logging in.",
+    "s.passport.email.missing": "No email was entered.",
+    "s.passport.username.missing": "No username was entered.",
+    "s.passport.password.missing": "No password was entered.",
+    "s.passport.email.exists": "This email already exists.",
+    "s.passport.user.exists": "This user already exists.",
+    "s.passport.invalid.password": "Invalid password.",
+    "s.passport.email.not.found": "Email not found.",
+    "s.passport.username.not.found": "Username not found.",
+    "s.passport.password.wrong": "Password wrong.",
+    "s.passport.password.not.set": "Password not set."
 }

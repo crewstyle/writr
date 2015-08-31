@@ -20,11 +20,12 @@ module.exports = {
             required: true
         },
 
-        /*password: {
-            type: 'string',
-            minLength: 6,
-            required: true
-        },*/
+        // › See passport attribute below
+        // password: {
+        //     type: 'string',
+        //     minLength: 6,
+        //     required: true
+        // },
 
         status: {
             type: 'integer',
@@ -176,50 +177,17 @@ module.exports = {
         /**
          * @todo Generate new `activationKey` ~ Send mail with key ~ Edit some profile values
          */
-
-        /* ~ Old way to store password ~ Encrypt password before create User in database
-        if (!uObj.password || uObj.password !== uObj.confirmation) {
-            return cb({err: ['Password doesnt match password confirmation']});
-        }
-
-        bcrypt.hash(uObj.password, 10, function (err, hash){
-            if (err) {
-                return cb(err);
-            }
-
-            uObj.password = hash;
-            cb();
-        });*/
-    }
+    },
 
     /**
-     * @description     Encrypt password before update User in database
+     * @description     Send mail when user's details have been updated
      * @param           {Object} uObj       User's details in object
      * @param           {Function} cb       Callback function
      * @return          {[type]}            [description]
      */
-    /*beforeUpdate: function (uObj, cb){
-        if (uObj.newPassword && uObj.newPassword !== uObj.confirmation) {
-            return cb({err: ['Password doesnt match password confirmation']});
-        }
-
-        bcrypt.compare(uObj.currentPassword, uObj.password, function (err, valid){
-            if (err) {
-                return cb(err);
-            }
-
-            if (!valid) {
-                return cb({err: ['Password doesnt match with your old password']});
-            }
-
-            bcrypt.hash(uObj.newPassword, 10, function (err, hash){
-                if (err) {
-                    return cb(err);
-                }
-
-                uObj.password = hash;
-                cb();
-            });
-        });
-    }*/
+    beforeUpdate: function (uObj, cb){
+        /**
+         * @todo Send mail
+         */
+    }
 };
