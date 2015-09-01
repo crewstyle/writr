@@ -111,4 +111,48 @@ module.exports = {
     //         }
     //     ]
     // }
+
+    auth: {
+        // facebook
+        facebook: {
+            clientId: 'id-to-define',
+            clientSecret: 'secret-to-define'
+        },
+
+        // github
+        github: {
+            clientId: 'id-to-define',
+            clientSecret: 'secret-to-define'
+        },
+
+        // google
+        google: {
+            clientId: 'id-to-define',
+            clientSecret: 'secret-to-define'
+        },
+
+        // instagram
+        instagram: {
+            clientId: 'id-to-define',
+            clientSecret: 'secret-to-define'
+        },
+
+        // linkedin
+        linkedin: {
+            consumerKey: 'key-not-yet',
+            consumerSecret: 'secret-not-yet'
+        },
+
+        // twitter
+        twitter: {
+            consumerKey: 'key-to-define',
+            consumerSecret: 'secret-to-define'
+        },
+
+        // wordpress
+        wordpress: {
+            clientId: 'id-to-define',
+            clientSecret: 'secret-to-define'
+        }
+    }
 };

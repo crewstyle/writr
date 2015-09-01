@@ -27,6 +27,10 @@ module.exports = {
             required: true
         },
 
+        details: {
+            type: 'json'
+        },
+
         title: {
             type: 'string',
             defaultsTo: '',

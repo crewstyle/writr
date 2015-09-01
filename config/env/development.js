@@ -20,8 +20,9 @@ module.exports = {
     ***************************************************************************/
 
     models: {
+        // connection: 'LocalDiskDb',
         // connection: 'MongodbServer',
-        connection: 'localDiskDb',
+        connection: 'MysqlServer'
     }
 
 };

@@ -31,7 +31,7 @@ module.exports.connections = {
     *                                                                          *
     ***************************************************************************/
 
-    localDiskDb: {
+    LocalDiskDb: {
         adapter: 'sails-disk'
     },
 
@@ -44,13 +44,13 @@ module.exports.connections = {
     *                                                                          *
     ***************************************************************************/
 
-    // MysqlServer: {
-    //     adapter: 'sails-mysql',
-    //     host: '127.0.0.1',
-    //     user: 'root',
-    //     password: 'password',
-    //     database: 'writr'
-    // },
+    MysqlServer: {
+        adapter: 'sails-mysql',
+        host: '127.0.0.1',
+        user: 'root',
+        password: 'password',
+        database: 'writr'
+    }
 
     /***************************************************************************
     *                                                                          *

@@ -9,6 +9,8 @@
  *
  * For more information on configuration, check out:
  * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.globals.html
+ *
+ * @see https://github.com/konstantinzolotarev/sails-hook-adminpanel
  */
 
 var _statuses = require('./statuses');
